@@ -23,3 +23,7 @@ class TestRoom(unittest.TestCase):
        self.room.add_guest(self.guest.name)
        self.room.remove_guest(self.guest.name)
        self.assertEqual([], self.room.guests)
+
+   def test_add_song_to_track_list(self):
+       self.room.add_song(self.song)
+       self.assertEqual([self.song], self.room.track_list)
