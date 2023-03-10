@@ -7,7 +7,8 @@ class TestRoom(unittest.TestCase):
    def setUp(self):
        self.room = Room(1)
        self.song = Song("Jailhouse Rock", "Elvis", "Rock")
-       self.guest = Guest("Terry")
+       self.song2 = Song("Still into You", "Paramore", "Punk Rock")
+       self.guest = Guest("Terry", "Mambo No. 5")
 
    def test_room_id(self):
        self.assertEqual(1, self.room.id)
@@ -27,3 +28,8 @@ class TestRoom(unittest.TestCase):
    def test_add_song_to_track_list(self):
        self.room.add_song(self.song)
        self.assertEqual([self.song], self.room.track_list)
+
+   def test_add_two_songs_to_track_list(self):
+       self.room.add_song(self.song)
+       self.room.add_song(self.song2)
+       self.assertEqual([self.song,self.song2], self.room.track_list)
