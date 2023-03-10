@@ -5,13 +5,21 @@ from src.song import Song
 
 class TestRoom(unittest.TestCase):
    def setUp(self):
-       self.room = Room(1)
+       self.room = Room(1,4)
        self.song = Song("Jailhouse Rock", "Elvis", "Rock")
        self.song2 = Song("Still into You", "Paramore", "Punk Rock")
        self.guest = Guest("Terry", "Mambo No. 5")
 
    def test_room_id(self):
        self.assertEqual(1, self.room.id)
+
+   def test_max_capacity(self):
+       self.room.add_guest(self.guest)
+       self.room.add_guest(self.guest)
+       self.room.add_guest(self.guest)
+       self.room.add_guest(self.guest)
+       result = self.room.add_guest(self.guest)
+       self.assertEqual("Capacity Full", result)
 
    def test_song_artist(self):
        self.assertEqual("Elvis", self.song.artist)
