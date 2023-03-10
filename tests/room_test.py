@@ -18,3 +18,8 @@ class TestRoom(unittest.TestCase):
    def test_add_guest_to_room(self):
        self.room.add_guest(self.guest.name)
        self.assertEqual(["Terry"], self.room.guests)
+
+   def test_remove_guest_from_room(self):
+       self.room.add_guest(self.guest.name)
+       self.room.remove_guest(self.guest.name)
+       self.assertEqual([], self.room.guests)
