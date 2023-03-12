@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T12:12:20.362Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="EHRKT94GML0G9MO6mShj" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T12:12:46.654Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="Xz_Jj9_F7-ja6TJpAhHe" version="21.0.6" type="github">
   <diagram name="Page-1" id="kgjJAl69VYmc6s6KiQls">
     <mxGraphModel dx="954" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -55,8 +55,8 @@
         <mxCell id="NKqMFOzvVm93xXJBKoUz-19" value="remove_guest()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NKqMFOzvVm93xXJBKoUz-14">
           <mxGeometry x="10" y="155" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NKqMFOzvVm93xXJBKoUz-20" value="add_song()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NKqMFOzvVm93xXJBKoUz-14">
-          <mxGeometry x="10" y="185" width="80" height="30" as="geometry" />
+        <mxCell id="NKqMFOzvVm93xXJBKoUz-20" value="add_song(Song)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NKqMFOzvVm93xXJBKoUz-14">
+          <mxGeometry x="10" y="185" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NKqMFOzvVm93xXJBKoUz-21" value="check_fav()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NKqMFOzvVm93xXJBKoUz-14">
           <mxGeometry x="10" y="215" width="90" height="30" as="geometry" />
