@@ -6,11 +6,6 @@ class Room:
         self.track_list = []
         self.capacity = capacity
 
-    def add_guest(self,guest):
-        if len(self.guests) < self.capacity:
-            self.guests.append(guest)
-        return "Capacity Full"
-
     def remove_guest(self,guest):
         self.guests.remove(guest)
 
