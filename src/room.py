@@ -6,6 +6,7 @@ class Room:
         self.track_list = []
         self.capacity = capacity
         self.snacks = {} 
+        self.tab = 0
 
     def remove_guest(self,guest):
         self.guests.remove(guest)
@@ -18,4 +19,10 @@ class Room:
             if guest.fav_song in self.track_list:
                 return "Yipee!"
             else:
-                self.add_song(guest.fav_song)
+                self.add_song(guest.fav_song) 
+
+    def add_snack(self,snack,price):
+        self.snacks[snack] = price
+
+    def sell_snack(self,snack):
+        self.tab += self.snacks[snack]

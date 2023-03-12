@@ -43,6 +43,16 @@ class TestRoom(unittest.TestCase):
 #        self.room.add_guest(self.guest.name)
 #        self.assertEqual(["Terry"], self.room.guests)
 
+   def test_add_snack(self):
+       self.room.add_snack("Crisps", "£1")
+       self.assertEqual({"Crisps" : "£1"}, self.room.snacks)
+
+   def test_sell_snacks(self):
+       self.room.add_snack("Crisps", 1)
+       self.room.sell_snack("Crisps")
+       self.assertEqual(1, self.room.tab)
+       
+
    def test_remove_guest_from_room(self):
        self.bar.add_room_to_booth(self.room)
        self.bar.add_guest(self.guest.name)
