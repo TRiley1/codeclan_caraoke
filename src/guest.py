@@ -4,3 +4,7 @@ class Guest:
         self.fav_song = fav_song
         self.wallet = wallet
 
+    def pay(self, money):
+        if self.wallet >= money:
+            self.wallet -= money 
+
