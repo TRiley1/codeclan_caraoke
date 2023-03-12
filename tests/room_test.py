@@ -26,6 +26,19 @@ class TestRoom(unittest.TestCase):
    def test_song_artist(self):
        self.assertEqual("Elvis", self.song.artist)
 
+   def test_if_fav_song_on_track_list(self):
+       self.bar.add_room_to_booth(self.room)
+       self.bar.add_guest(self.guest)
+       self.room.add_song(self.guest.fav_song)
+       result = self.room.check_fav()
+       self.assertEqual("Yipee!", result)
+
+   def test_add_fav_if_not_there(self):
+        self.bar.add_room_to_booth(self.room)
+        self.bar.add_guest(self.guest)
+        self.room.check_fav()
+        self.assertEqual(1, len(self.room.track_list))
+
 #    def test_add_guest_to_room(self):
 #        self.room.add_guest(self.guest.name)
 #        self.assertEqual(["Terry"], self.room.guests)
