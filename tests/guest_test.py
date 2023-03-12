@@ -4,7 +4,7 @@ from src.guest import Guest
 class TestGuest(unittest.TestCase):
    
    def setUp(self):
-       self.guest = Guest("Terry", "Mambo No. 5")
+       self.guest = Guest("Terry", "Mambo No. 5",10)
 
 
    def test_check_guest_name(self):
